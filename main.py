@@ -10,8 +10,8 @@ import os
 # Token va konfiguratsiya
 BOT_TOKEN = "7617741780:AAHRnPEOJV5rRP21D7c_ycyXqsaxLG0hS6A"
 GROUP_ID = -1002135132927  # @AlphaMath_LCgroup ni IDsi
-CHANNEL_ID = "@AlphaMath_LC"  # Ko‘rsatadigan kanal username
-ADMIN_USERNAME = "@thezakirovv"  # Admin username
+CHANNEL_ID = "AlphaMath_LC"  # Ko‘rsatadigan kanal username
+ADMIN_USERNAME = "thezakirovv"  # Admin username
 
 # Bot va disp
 bot = Bot(token=BOT_TOKEN)
@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 # Inline tugma yasovchi
 def join_button():
     builder = InlineKeyboardBuilder()
-    builder.button(text="➕ Guruhga azo bo‘lish", url=f"https://t.me/{CHANNEL_ID.strip('@')}")
+    builder.button(text="➕ Guruhga a'zo bo‘lish", url=f"https://t.me/{CHANNEL_ID.strip('@')}")
     return builder.as_markup()
 
 # 1. /start komandasi — guruhga azo bo‘lmaganlarni tekshiradi
